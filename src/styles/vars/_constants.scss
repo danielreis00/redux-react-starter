@@ -1,0 +1,5 @@
+/** Is the maximum value handled by the most of the browsers
+(only safari 3 handles less but when we exceed it he transforms it for his highest handled value)
+src: http://stackoverflow.com/questions/491052/minimum-and-maximum-value-of-z-index
+**/
+$max-zindex: 2147483647;

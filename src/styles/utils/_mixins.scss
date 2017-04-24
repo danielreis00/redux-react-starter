@@ -1,0 +1,25 @@
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+/* Creates a full-height inline block ghost element.
+The element to be centered has to be a child of the block using this mixin
+and having the following properties:
+  display: inline-block;
+  vertical-align: middle;
+*/
+@mixin vertical-align() {
+  &:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
