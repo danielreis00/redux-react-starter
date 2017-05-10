@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <h1 className="dr-header">Hello to React boilerplate</h1>
+      <h1 className="dr-header">Hello to React boilerplate v1.0.0</h1>
     );
   }
 }
+
+export default App;
