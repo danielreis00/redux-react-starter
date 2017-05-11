@@ -1,7 +1,7 @@
 import { compose, createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-import { logger } from './Middleware';
-import reducers from '../reducers/Main';
+import { logger } from './middleware';
+import reducers from '../reducers/main';
 
 const configureStore = () => {
   const createStoreWithMiddleware = compose(

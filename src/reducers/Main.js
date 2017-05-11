@@ -1,4 +1,4 @@
-import { getInitialState } from '../utils/InitialState';
+import { getInitialState } from '../utils/initialState';
 
 const initialState = getInitialState();
 
