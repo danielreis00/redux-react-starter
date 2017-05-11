@@ -1,4 +1,5 @@
-import * as types from '../constants/actionTypes';
+import * as types from '../constants/actionsTypes';
+import { fromJS } from 'immutable';
 
 export function doDummyRequest() {
   return {
@@ -18,4 +19,17 @@ export function doDummyFailure(payload) {
     type: types.DO_DUMMY_FAILURE,
     payload,
   };
+}
+
+export function doDummy(random){
+  return (dispatch) => {
+    dispatch(doDummyRequest());
+
+    return new Promise((resolve, reject) => {
+                resolve(random);
+               })
+               .then(json => fromJS(json))
+               .then(data => dispatch(doDummySuccess(data)))
+               .catch(ex => dispatch(doDummyFailure(ex)));
+   };
 }
