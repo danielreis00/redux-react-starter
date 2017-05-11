@@ -39,9 +39,7 @@ module.exports = {
   },
 
   output: {
-    path: process.env.NODE_ENV === 'production'
-      ? __dirname + '/build'
-      : __dirname + '/dist',
+    path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
