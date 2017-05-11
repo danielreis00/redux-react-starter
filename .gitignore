@@ -44,5 +44,8 @@ jspm_packages
 *.tgz
 
 # Build artefacts
-dist
+dist/bundle.js
 build
+
+# Stupid shit
+.DS_Store
