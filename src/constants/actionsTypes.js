@@ -1,0 +1,4 @@
+export const DEFAULT = 'DO_DEFAULT';
+export const DO_DUMMY_REQUEST = 'DO_LOGIN_REQUEST';
+export const DO_DUMMY_SUCCESS = 'DO_DUMMY_SUCCESS';
+export const DO_DUMMY_FAILURE = 'DO_DUMMY_FAILURE';

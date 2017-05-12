@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb",
+  "installedESLint": true,
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true
+  }
+}

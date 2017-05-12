@@ -1,2 +1,2 @@
-# redux-react-starter
-My boilerplate to start a redux-react project
+# Redux-react starter
+The base for a project using redux and react
