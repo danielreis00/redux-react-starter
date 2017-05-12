@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { doDummy } from '../actions/actions';
+import Dummy from '../components/Dummy';
 
 class AppContainer extends Component {
   componentDidMount() {
@@ -11,7 +12,7 @@ class AppContainer extends Component {
     return (
       <div>
         <h1 className="dr-header">Hello to my Redux-React boilerplate</h1>
-        <div>Dummy: {this.props.dummy}</div>
+        <Dummy dummy={this.props.dummy} />
       </div>
     );
   }
