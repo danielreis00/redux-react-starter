@@ -1,0 +1,4 @@
+--recursive
+--timeout 10000
+--require test/common
+-r jsdom-global/register
